@@ -1,0 +1,14 @@
+# Backup files
+*.backup
+*.backup.*
+*.old
+
+# System files
+.DS_Store
+*~
+*.swp
+*.swo
+
+# Personal notes
+notes/
+private/
