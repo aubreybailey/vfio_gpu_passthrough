@@ -99,10 +99,19 @@ sudo reboot
 - QEMU/KVM or libvirt for running VMs
 
 ### Tested On
-- **OS**: Ubuntu 24.04 (should work on most Linux distros)
-- **CPU**: AMD Ryzen (with AMD-Vi IOMMU)
-- **GPU**: NVIDIA GeForce RTX 5060 Ti
+
+**Development System:**
+- **CPU**: AMD Ryzen 9 9950X (16-Core, with AMD-Vi IOMMU)
+- **Integrated GPU**: AMD Radeon Graphics (Granite Ridge) - Used for host display
+- **Passthrough GPU**: NVIDIA GeForce RTX 5060 Ti (10de:2d04)
+- **OS**: Ubuntu 24.04 LTS
 - **Kernel**: 6.17.0-6-generic
+
+This configuration demonstrates:
+- ✅ AMD CPU with integrated graphics (iGPU provides host display)
+- ✅ NVIDIA discrete GPU passed through to VMs
+- ✅ Seamless switching between passthrough and host use
+- ✅ No display issues during mode changes
 
 ## Documentation
 
