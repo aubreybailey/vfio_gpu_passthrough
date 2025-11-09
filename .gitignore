@@ -12,3 +12,4 @@
 # Personal notes
 notes/
 private/
+*-backup-*.xml
