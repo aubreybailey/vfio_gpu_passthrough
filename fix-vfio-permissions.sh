@@ -43,7 +43,7 @@ fi
 echo
 
 # Create udev rule for VFIO devices
-UDEV_RULE="/etc/udev/rules.d/99-vfio-permissions.conf"
+UDEV_RULE="/etc/udev/rules.d/99-vfio-permissions.rules"
 
 cat > "$UDEV_RULE" << 'EOF'
 # VFIO device permissions for GPU passthrough
